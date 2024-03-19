@@ -1,0 +1,21 @@
+.container, 
+.item {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    height: 800px;
+    width: 800px;
+    flex-wrap: wrap;
+    border: solid #000;
+}
+
+.item {
+    background-color: #dcdcdc;
+}
+
+.item:hover {
+    background-color: #a3a3a3;
+}
