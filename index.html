@@ -10,12 +10,22 @@
     </head>
     <body>
         <div class="container"></div>
+        
         <button onclick="resetContainer()">Clear</button>
         <button onclick="changeContainerSize()">Change Size</button>
-        <button onclick="blue()">Blue</button>
-        <button onclick="randomColor()">Random Color</button>
-        <button onclick="rainbowColor()">Rainbow Color</button>
-        <button onclick="changeBackgroundColor('red')">Change Background Red</button>
+
+        <button onclick="openPenColorSelection()">Pick Pen Color</button>
+        <dialog id="pen-color-selection">
+            <button onclick="changePenColor('red')">Red</button>
+            <button onclick="changePenColor('blue')">Blue</button>
+            <button onclick="changePenColor(randomRGBColor())">Random</button>
+            <button onclick="changePenColor('rainbow')">Rainbow</button>
+            <button onclick="customPenColorPick()">Custom</button>
+            <button onclick="closePenColorSelection()">X</button>
+        </dialog>
+        
+        <button onclick="openBgColorSelection()">Change Background Color</button>
+
         <script src="script.js" async defer></script>
     </body>
 </html>
