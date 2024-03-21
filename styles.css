@@ -4,6 +4,11 @@
     --title-font: "Honk", system-ui;
     --bg-color: #64c7f3;
     --fg-color: #f2e73d;
+    --shadow: -10px 10px 0px 0px #000;
+}
+
+html {
+    box-sizing: border-box;
 }
 
 body {
@@ -39,6 +44,10 @@ div#game {
     width: 800px;
     flex-wrap: wrap;
     border: solid #000;
+
+    box-shadow: var(--shadow);
+    -webkit-box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow);
 }
 
 .item {
@@ -59,8 +68,17 @@ div#game {
     margin: 0 3rem;
     height: 10rem;
     background-color: var(--fg-color);
+
+    box-shadow: var(--shadow);
+    -webkit-box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow);
 }
 
 .scratch-control > button {
     padding: 0.5rem;
+    background-color: #fff;
+}
+
+.scratch-control > button:hover {
+    background-color: #cccccc;
 }
