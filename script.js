@@ -20,7 +20,7 @@ function createDefaultSketch() {
 // clean the board
 function resetContainer() {
     boxesArray.map((element) => {
-        element.style.backgroundColor = "#dcdcdc";
+        element.style.backgroundColor = "#fff";
     });
 }
 

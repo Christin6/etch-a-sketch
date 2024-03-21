@@ -9,25 +9,27 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div class="container"></div>
+        <h1>Etch a Sketch</h1>
+        <div id="game">
+            <div class="container"></div>
 
-        <nav class="scratch-control">
-            <button onclick="resetContainer()">Clear</button>
-            <button onclick="changeContainerSize()">Change Size</button>
+            <nav class="scratch-control">
+                <button onclick="resetContainer()">Clear</button>
+                <button onclick="changeContainerSize()">Change Size</button>
 
-            <button onclick="openPenColorSelection()">Pick Pen Color</button>
-            <dialog id="pen-color-selection">
-                <button onclick="changePenColor('red')">Red</button>
-                <button onclick="changePenColor('blue')">Blue</button>
-                <button onclick="changePenColor(randomRGBColor())">Random</button>
-                <button onclick="changePenColor('rainbow')">Rainbow</button>
-                <button onclick="customPenColorPick()">Custom</button>
-                <button onclick="closePenColorSelection()">X</button>
-            </dialog>
-            
-            <button onclick="openBgColorSelection()">Change Background Color</button>    
-        </nav>
-
+                <button onclick="openPenColorSelection()">Pick Pen Color</button>
+                <dialog id="pen-color-selection">
+                    <button onclick="changePenColor('red')">Red</button>
+                    <button onclick="changePenColor('blue')">Blue</button>
+                    <button onclick="changePenColor(randomRGBColor())">Random</button>
+                    <button onclick="changePenColor('rainbow')">Rainbow</button>
+                    <button onclick="customPenColorPick()">Custom</button>
+                    <button onclick="closePenColorSelection()">X</button>
+                </dialog>
+                
+                <button onclick="openBgColorSelection()">Change Background Color</button>    
+            </nav>
+        </div>
         <script src="script.js" async defer></script>
     </body>
 </html>
